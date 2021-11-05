@@ -34,15 +34,18 @@
 
     setTimeout(function() {
             animate(soon, "animate__tada");
-    }, 2000);
+            animate(bar, "animate__fadeInUp");
+    }, 2500);
 
     setTimeout(function() {
-        animate(bar, "animate__backInLeft");
-    }, 3000);
+        bar.classList.remove("animate__fadeInUp");
+        animate(bar, "animate__pulse");
+    }, 4000);
 
     setTimeout(function() {
+        instagram.classList.remove("animate__slideInUp");
         animate(instagram, "animate__heartBeat");
-    }, 4500);
+    }, 5000);
 
 
     function animate(comp, animation){
