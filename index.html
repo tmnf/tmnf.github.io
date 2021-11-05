@@ -34,18 +34,18 @@
 
     setTimeout(function() {
             animate(soon, "animate__tada");
-            animate(bar, "animate__fadeInUp");
+            animate(bar, "animate__bounceInLeft");
     }, 2500);
 
     setTimeout(function() {
-        bar.classList.remove("animate__fadeInUp");
+        bar.classList.remove("animate__bounceInLeft");
         animate(bar, "animate__pulse");
-    }, 4000);
+    }, 3500);
 
     setTimeout(function() {
         instagram.classList.remove("animate__slideInUp");
         animate(instagram, "animate__heartBeat");
-    }, 5000);
+    }, 4500);
 
 
     function animate(comp, animation){
