@@ -53,6 +53,29 @@ img, embed, a{
     width: 90%;
 }
 
+.progress {
+    margin: 50px auto;
+    padding: 2px;
+    width: 90%;
+    max-width: 90%;
+    border: 3px solid white;
+    height: 20px;
+    display: none;
+  }
+  
+  .progress .progress__bar {
+    height: 100%;
+    width: 0%;
+    background-color: white;
+    animation: fill-bar 4s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fill-bar {
+    from {width: 0%;}
+    to {width: 85%;}
+  }
+
 .instagram {
     width: 8%;
 }
@@ -76,6 +99,11 @@ img, embed, a{
         padding-bottom: 40px;
         width: 65%;
     }
+
+    .progress {
+        height: 40px;
+        border: 5px solid white;
+    }
     
     .instagram {
         width: 4%;
@@ -85,3 +113,5 @@ img, embed, a{
 .instagram:hover {
     background: rgba(0, 0, 0, 0.6);
 }
+
+

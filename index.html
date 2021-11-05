@@ -14,7 +14,11 @@
     <section class="middle-section">
         <img src="title_text.png" class="title animate__animated">
         <img src="soon_text.png" class="soon animate__animated">
-        <img src="bar.png" class="bar animate__animated">
+
+        <div class="progress"> 
+            <div class="progress__bar animate__animated"></div>
+        </div>
+        
         <a href="https://www.instagram.com/marianainacio_photos/" target="_blank" style="display: block;">
             <img src="instagram.png" class="instagram animate__animated">
         </a>
@@ -24,7 +28,8 @@
 <script>
     var title = document.getElementsByClassName("title")[0];
     var soon = document.getElementsByClassName("soon")[0];
-    var bar = document.getElementsByClassName("bar")[0];
+    var bar = document.getElementsByClassName("progress_bar")[0];
+    var progress = document.getElementsByClassName("progress")[0];
     var instagram = document.getElementsByClassName("instagram")[0];
     var a = document.getElementsByTagName("a")[0];
 
@@ -34,18 +39,14 @@
 
     setTimeout(function() {
             animate(soon, "animate__tada");
-            animate(bar, "animate__bounceInLeft");
+            animate(progress,"");
+            animate(bar, "");
     }, 2500);
-
-    setTimeout(function() {
-        bar.classList.remove("animate__bounceInLeft");
-        animate(bar, "animate__pulse");
-    }, 3500);
 
     setTimeout(function() {
         instagram.classList.remove("animate__slideInUp");
         animate(instagram, "animate__heartBeat");
-    }, 4500);
+    }, 6550);
 
 
     function animate(comp, animation){
