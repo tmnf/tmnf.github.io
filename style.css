@@ -39,20 +39,41 @@ img, embed{
 }
 
 .title {
-    padding-bottom: 100px;
-    width: 50%;
+    padding-bottom: 40px;
+    width: 70%;
 }
 
 .soon {
-    padding-bottom: 50px;
-    width: 30%;
+    padding-bottom: 30px;
+    width: 40%;
 }
 
 .bar {
-    padding-bottom: 40px;
-    width: 65%;
+    padding-bottom: 10px;
+    width: 90%;
 }
 
 .instagram {
-    width: 4%;
+    width: 8%;
 }
+
+@media screen and (min-width: 768px) {
+    .title {
+        padding-bottom: 100px;
+        width: 50%;
+    }
+    
+    .soon {
+        padding-bottom: 50px;
+        width: 30%;
+    }
+    
+    .bar {
+        padding-bottom: 40px;
+        width: 65%;
+    }
+    
+    .instagram {
+        width: 4%;
+    }
+} 
